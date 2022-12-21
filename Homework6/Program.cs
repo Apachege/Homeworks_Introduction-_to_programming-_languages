@@ -3,27 +3,20 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-// void CountEven (int [] array){
-//     int count = 0;
-//     for(int i = 0; i < array.Length; i++){ 
-//         if (array[i]>0) count++;
-//     }
-//     Console.WriteLine($"The number of positive numbers is {count}");
-// }
+void CountEven (int m){
+    int [] array = new int[m];
+    int count = 0;
+    for(int i = 0; i < m; i++){ 
+        Console.Write("Enter number: ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+        if (array[i]>0) count++;
+    }
+    Console.WriteLine($"The number of positive numbers is {count}");
+}
 
-// int [] TransformArray (int m){
-//     int [] array = new int[m];
-//     for(int i = 0; i < m; i++){
-//         Console.Write("Enter number: ");
-//         array[i] = Convert.ToInt32(Console.ReadLine());
-//     }
-//     return array;
-// }
-
-// Console.Write("Enter the number of numbers: ");
-// int m = Convert.ToInt32(Console.ReadLine());
-// int [] array = TransformArray(m);
-// CountEven(array);
+Console.Write("Enter the number of numbers: ");
+int m = Convert.ToInt32(Console.ReadLine());
+CountEven(m);
 
 
 // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
